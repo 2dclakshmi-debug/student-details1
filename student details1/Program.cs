@@ -37,22 +37,12 @@ namespace student_details1
         {
             static void Main(string[] args)
             {
-                Student[] obj = new Student[100];
+                Student obj = new Student();
 
                 for (int i = 0; i < 100; i++)
                 {
-                    obj[i] = new Student();
-
-                    Console.WriteLine("Enter Details of Student " + (i + 1));
-
-                    obj[i].AcceptStudentDetails();
-                }
-
-                Console.WriteLine("\nStudent Details:\n");
-
-                for (int i = 0; i < 100; i++)
-                {
-                    obj[i].DisplayStudentDetails();
+                    obj.AcceptStudentDetails();
+                    obj.DisplayStudentDetails();
                 }
             }
         }
